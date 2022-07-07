@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         todosAdapter.notifyDataSetChanged()
 
         binding.button.setOnClickListener {
+
+            //   აქ ჯობდა რომ adapterში გაგეკეთებინა addItem მეთოდი და შიგ ყოფილიყო notifyDataSetChanged()
+            //      ს ნაცვლად notifyItemInserted
+
             todosAdapter.todoslist.addAll(listOf(Todos("${binding.edTodo.text}")))
             todosAdapter.notifyDataSetChanged()
         }

@@ -32,3 +32,5 @@ class TodosAdapter : RecyclerView.Adapter<TodosViewHolder>() {
 class TodosViewHolder(val item: LayoutTodosBinding) : RecyclerView.ViewHolder(item.root)
 
 data class Todos(val todostext: String)
+// აქ ერთი ცვლადი შეგეძლო დაგემატებინა
+// var isComplete და ამის მიხედვით მიგეცა  ფერი
